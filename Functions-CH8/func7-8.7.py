@@ -18,7 +18,7 @@ def make_album(artist,album,number=''):
 musician1= make_album('jay-z','the blueprint')
 musician2= make_album('kanye west','last registration')
 musician3= make_album('prince','purple rain')
-musician4= make_album('micheal jackson','thriller','3')
+musician4= make_album('micheal jackson','thriller',3)
 print(musician1)
 print(musician2)
 print(musician3)   
