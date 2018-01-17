@@ -33,11 +33,22 @@ class Admin(User):
     def __init__(self,first_name,last_name,age,email_address):
 
         super(Admin,self).__init__(first_name,last_name,age,email_address)
-        self.privileges = ['can add post','can delete post ','can ban user']
+        self.privileges = Privileges()
+    
+
+#Privileges: Write a separate Privileges class. 
+# The class should have one attribute, privileges, that stores a list of strings as described in Exercise 9-7. 
+# Move the show_privileges() method to this class. 
+# Make a Privileges instance as an attribute in the Admin class. 
+# Create a new instance of Admin and use your method to show its privileges.
+
+
+class Privileges(object):
+    def __init__(self):
+        self.privilegess = ['can add post','can delete post','can lke post']
     def funcname(self):
-        print self.privileges
+        print self.privilegess
+    
 
-
-nkapalala = Admin('Nick','Kapalala',27,'nkapalala@gmail.com')
-nkapalala.funcname()
-        
+nkapalala = Admin('Ivan','Kapalala',27,'ivan@inva.com')
+nkapalala.privileges.funcname()
