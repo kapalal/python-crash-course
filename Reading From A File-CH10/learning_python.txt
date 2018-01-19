@@ -1,0 +1,4 @@
+In python you can store variabkles
+In Python you can count number
+In Python you can read files
+In python you can buold things!
