@@ -11,3 +11,8 @@
 
 # Notice that converting the string to lowercase using lower() catches all appearances of the word you’re looking for, regardless of how it’s formatted.
 # Write a program that reads the files you found at Project Gutenberg and determines how many times the word 'the' appears in each text.
+
+with open('lettere.txt') as libro:
+    readme = libro.read()
+    cans = readme.lower().count('debito')
+    print(str(cans))

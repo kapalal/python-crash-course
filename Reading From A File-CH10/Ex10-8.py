@@ -3,3 +3,16 @@
 # Write a program that tries to read these files and print the contents of the file to the screen. 
 # Wrap your code in a try-except block to catch the FileNotFound error, and print a friendly message if a file is missing. 
 # Move one of the files to a different location on your system, and make sure the code in the except block executes properly.
+
+try:
+    with open('animal1.txt') as obj:
+        readme = obj.read()
+
+    with open('animal') as obj2:
+        readme1 = obj2.read()
+except FileNotFoundError:
+    pass
+    # print("The file wans found here!")
+else:
+
+    print(readme+ "\n" + readme1)
